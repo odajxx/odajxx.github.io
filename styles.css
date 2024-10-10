@@ -1,0 +1,394 @@
+/* Root Variables */
+:root {
+    --darkgreen: #01240a;
+    --gold: #b87802;
+    --gold-light: #E39607;
+    --white: #ffffff;
+    --gray: #ececec;
+    --black: #000000;
+    --backgroundgreen: #001105;
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inconsolata", monospace;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px; /* Adjust this width to your preference */
+    background-color: var(--backgroundgreen);
+    color: var(--white);
+    display: block;
+}
+
+
+/* Navigation Styles */
+.nav-container {
+    width: 100%;
+    background-color: var(--backgroundgreen);
+    transition: box-shadow 0.5s ease-in-out;
+    
+}
+
+.nav-container:hover {
+    box-shadow: 0 5px 8px rgba(218, 142, 2, 0.1);
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    max-width: 1200px; /* Aligns with body */
+    margin: 0 auto;
+    padding: 0 20px; /* Left and right padding */
+}
+
+#nav-logo {
+    color: var(--gold);
+    justify-self: start;
+    cursor: pointer;
+    margin-left: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    list-style: none;
+    text-align: center;
+    width: 70%;
+    justify-self: end;
+}
+
+.nav-links {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+}
+
+.nav-links:hover {
+    color: var(--gold-light);
+}
+
+/* .nav-links:focus {
+    outline: 2px solid var(--gold);
+} */
+
+/* .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: var(--white);
+    transition: all 0.2s ease-in-out;
+} */
+
+#home .intro {
+    padding: 50px 20px;
+    text-align: left;
+}
+
+#home .intro h1 {
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+#home .intro p {
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+
+/* Services Section */
+#services {
+    padding: 50px 0;
+    background-color: var(--backgroundgreen);
+}
+
+.service-header {
+    font-size: 1.8rem;
+    color: var(--white);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.service-box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    max-width: 1200px; /* Aligns with body */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.service-box {
+    background-color: var(--backgroundgreen);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(230, 151, 4, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.service-box:hover {
+    box-shadow: 0 10px 8px rgba(238, 156, 4, 0.1);
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Categories */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.category {
+    background-color: #ffffff;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 10px rgba(0, 63, 33, 0.301);
+}
+
+.category h3 {
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.category ul li {
+    margin-bottom: 8px;
+}
+
+.category ul li a {
+    text-decoration: none;
+    color: var(--darkgreen);
+    transition: color 0.3s ease;
+}
+
+.category ul li a:hover {
+    color: var(--gold-light);
+}
+
+/* Resume Section */
+#resume-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: var(--backgroundgreen);
+}
+
+.resume-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.download-btn {
+    margin-bottom: 20px;
+}
+
+.download-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--darkgreen);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-btn a:hover {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+.pdf-embed {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 63, 33, 0.1);
+}
+
+.pdf-embed embed {
+    width: 100%;
+    height: 800px; /* Adjust height as needed */
+    border: none;
+}
+
+.pdf-embed p {
+    color: var(--white);
+    margin-top: 10px;
+}
+
+.pdf-embed p a {
+    color: var(--gold-light);
+}
+
+.pdf-embed p a:hover {
+    color: var(--gold);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--backgroundgreen);
+    color: var(--white);
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: var(--white);
+}
+
+.footer-right a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: var(--gold-light);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: grid;
+        grid-template-columns: auto;
+        background: var(--gold);
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: var(--white);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links {
+        background-color: var(--darkgreen);
+        text-align: center;
+        line-height: 60px;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        box-shadow: #011707;
+        background-color: var(--white);
+        color: var(--darkgreen);
+        transition: all 0.4s ease-out;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-links {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(15%, 20%);
+        cursor: pointer;
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .service-box {
+        flex: 1 1 100%;
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .service-header {
+        font-size: 1.2rem;
+    }
+
+    /* Resume Section Responsive */
+    .pdf-embed embed {
+        height: 600px;
+    }
+
+    @media (max-width: 480px) {
+        .pdf-embed embed {
+            height: 400px;
+        }
+    }
+}
