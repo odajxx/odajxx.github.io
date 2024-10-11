@@ -78,13 +78,13 @@ body {
     outline: 2px solid var(--gold);
 } */
 
-/* .menu-toggle .bar {
+.menu-toggle .bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
     background: var(--white);
     transition: all 0.2s ease-in-out;
-} */
+}
 
 #home .intro {
     padding: 50px 20px;
@@ -272,6 +272,7 @@ footer {
 
 .footer-right a {
     color: var(--white);
+    font-size: 1.3rem;
     text-decoration: none;
     margin-left: 10px;
     transition: color 0.3s ease;
