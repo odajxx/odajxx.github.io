@@ -47,12 +47,13 @@ body {
     padding: 0 20px; /* Left and right padding */
 }
 
-#nav-logo {
+#nav-logo  {
     color: var(--gold);
     justify-self: start;
     cursor: pointer;
     margin-left: 20px;
     font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
 }
 
 .nav-menu {
@@ -73,10 +74,6 @@ body {
 .nav-links:hover {
     color: var(--gold-light);
 }
-
-/* .nav-links:focus {
-    outline: 2px solid var(--gold);
-} */
 
 .menu-toggle .bar {
     width: 25px;
@@ -188,6 +185,41 @@ body {
 
 .category ul li a:hover {
     color: var(--gold-light);
+}
+
+
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: var(--backgroundgreen);
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--white);
+}
+
+.profile-image {
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.about-name {
+    font-size: 2rem;
+    color: var(--gold);
+    margin-bottom: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.bio {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--gray);
 }
 
 /* Resume Section */
@@ -380,6 +412,16 @@ footer {
 
     .service-header {
         font-size: 1.2rem;
+    }
+
+
+    .about-container {
+        padding: 20px;
+    }
+    
+    .profile-image {
+        width: 150px;
+        height: 150px;
     }
 
     /* Resume Section Responsive */
