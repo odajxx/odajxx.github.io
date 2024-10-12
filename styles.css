@@ -32,7 +32,7 @@ body {
 /* Navigation Styles */
 .nav-container {
     width: 100%;
-    background-color: var(--white);
+    /* background-color: var(--white); */
     transition: box-shadow 0.5s ease-in-out;
     
 }
@@ -42,9 +42,10 @@ body {
     grid-template-columns: 0.2fr auto 1fr;
     align-items: center;
     height: 80px;
-    max-width: 1200px; /* Aligns with body */
-    margin: 0 auto;
-    padding: 0 20px; /* Left and right padding */
+    padding: 0 20px; /* Keeps some padding */
+    width: 100%; /* Full width */
+    margin: 0; /* Remove any margin */
+    max-width: none; /* Remove max-width restriction */
 }
 
 #nav-logo  {
@@ -137,7 +138,7 @@ a {
 .service-box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 15px;
+    gap: 25px;
     max-width: 1200px; /* Aligns with body */
     margin: 0 auto;
     padding: 0 20px;
@@ -147,14 +148,14 @@ a {
     background-color: var(--gray);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(230, 151, 4, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 38, 1, 0.185);
     transition: box-shadow 0.3s ease-in-out;
     text-align: center;
 }
 
 .service-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 8px rgba(0, 22, 4, 0.434);
+    box-shadow: 0 10px 8px rgba(0, 22, 4, 0.412);
 }
 
 .service-box img {
@@ -306,7 +307,8 @@ a {
 
 /* Footer Styles */
 footer {
-    background-color: var(--white);
+    /* background-color: var(--white); */
+    width: 100%;
     color: var(--darkgreen);
     padding: 20px 0;
 }
@@ -315,8 +317,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     padding: 0 20px;
 }
 
