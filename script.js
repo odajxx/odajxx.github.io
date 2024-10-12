@@ -10,3 +10,10 @@ menu.addEventListener("click", function() {
     menu.setAttribute("aria-expanded", !expanded);
 });
 
+// Add 'active' class to the current page's link
+const currentPage = window.location.pathname;
+document.querySelectorAll('.nav-links').forEach(link => {
+    if (link.href.includes(currentPage)) {
+        link.classList.add('active');
+    }
+});
