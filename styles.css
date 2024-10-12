@@ -33,10 +33,6 @@ body {
     
 }
 
-.nav-container:hover {
-    box-shadow: 0 5px 8px rgba(218, 142, 2, 0.1);
-}
-
 .navbar {
     display: grid;
     grid-template-columns: 0.2fr auto 1fr;
@@ -56,6 +52,11 @@ body {
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -66,6 +67,7 @@ body {
 }
 
 .nav-links {
+    position: relative; /* Required for positioning the dot */
     color: var(--white);
     text-decoration: none;
     transition: color 0.2s ease-out;
@@ -73,6 +75,22 @@ body {
 
 .nav-links:hover {
     color: var(--gold-light);
+}
+
+.nav-links.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust this to control the spacing */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--gold);
+}
+
+.nav-links:hover::after {
+    background-color: var(--gold-light);
 }
 
 .menu-toggle .bar {
@@ -433,5 +451,18 @@ footer {
         .pdf-embed embed {
             height: 400px;
         }
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center; /* Centers the content */
+    }
+
+    .footer-right {
+        margin-top: 10px; /* Adds space between the copyright and icons */
+    }
+
+    .footer-right a {
+        margin: 0 5px; /* Adjusts spacing between icons */
     }
 }
