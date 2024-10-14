@@ -277,8 +277,8 @@ hr.solid {
 }
 
 .experience-details {
-    flex: 1; /* Takes up remaining space next to the vertical line */
     padding-bottom: 10px; /* Adds some spacing between entries */
+    flex: 1; /* Takes up remaining space next to the vertical line */
 }
 
 .experience-header {
@@ -290,17 +290,25 @@ hr.solid {
 .location {
     font-weight: bold;
     font-size: 1.2em;
+    margin-top: 10px;  /*Optional */
 }
 
 .date {
     font-size: 1em;
     white-space: nowrap; /* Prevents the date from wrapping onto a new line */
+    color: #555;
+}
+.description{
+    margin-top: 0px;
+    font-size: 0.95em;
+    color: var(--darkgreen);
+    width: 90%;
+    margin-bottom: 0px;
 }
 
-p {
-    margin-top: 5px;
-    font-size: 0.95em;
-    color: #555;
+ul {
+    list-style-type:square;
+    width: 90%;
 }
 
 
