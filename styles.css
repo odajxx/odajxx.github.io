@@ -60,9 +60,10 @@ body {
 
 
 #icon {
-    width: 30px;
+    font-size: 30px; /* Similar size to the 30px width of the image */
     cursor: pointer;
 }
+
 #nav-logo  {
     color: var(--tetiary-color);
     justify-self: start;
