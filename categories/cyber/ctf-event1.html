@@ -3,61 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odaj Portfolio - Programming</title>
+    <title>Odaj Portfolio - Cybersecurity</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../../styles.css">
     <script src="https://kit.fontawesome.com/980f417404.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="nav-container">
         <nav class="navbar">
-           <a href="index.html"> <h1 id="nav-logo">ODAJ</h1> </a> 
+           <a href="../../index.html"> <h1 id="nav-logo">ODAJ</h1> </a> 
             <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul class="nav-menu">
-                <li><a href="../index.html" class="nav-links active">Home</a></li>
-                <li><a href="../about.html" class="nav-links">About</a></li>
-                <li><a href="../portfolio.html" class="nav-links">Experience</a></li>
-                <li><a href="../resume.html" class="nav-links">Resume</a></li>
+                <li><a href="../../index.html" class="nav-links active">HOME</a></li>
+                <li><a href="../../about.html" class="nav-links">WHOAMI</a></li>
+                <li><a href="../../portfolio.html" class="nav-links">EXPERIENCE</a></li>
+                <li><a href="../../resume.html" class="nav-links">RESUME</a></li>
                 <li><i id="icon" class="fa-solid fa-moon"></i></li>
             </ul>
             <!-- <i id="icon" class="fa-solid fa-moon"></i> -->
         </nav>
     </header>
 
-    <section id="home">
-        <div class="intro">
-            <h1>Programming</h1>
-            <p>This section highlights my programming projects and skills.</p>
-        </div>
+
+    <section id="writeup">
+        <h1>CTF Event 1 Writeup</h1>
+        <p>This writeup covers the key steps and techniques used to solve challenges in <strong>CTF Event 1</strong>.</p>
+        
+        <h2>Overview</h2>
+        <p>This challenge required exploring vulnerabilities and applying creative problem-solving skills to capture the flag.</p>
+
+        <h2>Step 1: Reconnaissance</h2>
+        <p>We started with a basic reconnaissance of the target environment, using tools like Nmap...</p>
+        <img src="../images/ctf-recon.png" alt="Reconnaissance screenshot" style="width:100%; height:auto;">
+
+        <h2>Step 2: Exploitation</h2>
+        <p>After identifying key vulnerabilities, we proceeded to exploit them, leveraging...</p>
+        <img src="../images/ctf-exploit.png" alt="Exploitation screenshot" style="width:100%; height:auto;">
+
+        <!-- <hr class="solid"> -->
+
+        <h3>Further Reading</h3>
+        <ul>
+            <li><a href="https://ctftime.org" target="_blank">CTF Time - Event Listings</a></li>
+            <li><a href="https://owasp.org" target="_blank">OWASP Vulnerabilities Guide</a></li>
+        </ul>
     </section>
 
-    <section id="services">
-        <div class="categories">
-            <div class="category">
-                <h3>PYTHON 100 DAYS OF CODE</h3>
-                <p>Description of design project 1.</p>
-                <ul>
-                    <li><a href="github-100DAYS-of-code.html">View Design</a></li>
-                </ul>
-            </div>
-
-            <div class="category">
-                <h3>HackerRank</h3>
-                <p>Description of design project 2.</p>
-                <ul>
-                    <li><a href="hackerrank.html">View Design</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    
     <footer>
         <div class="footer-container">
             <div class="footer-left">
@@ -76,7 +74,7 @@
             </div>
         </div>
     </footer>
-
-    <script src="../script.js"></script>
+    
+    <script src="../../script.js"></script>
 </body>
 </html>
