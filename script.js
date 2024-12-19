@@ -33,19 +33,3 @@ icon.onclick = function() {
         icon.classList.add("fa-moon");
     }
 }
-
-
-// Function to load external HTML into placeholders
-function loadHTML(elementId, filePath) {
-    fetch(filePath)
-        .then(response => {
-            if (response.ok) return response.text();
-            throw new Error('Network response was not ok');
-        })
-        .then(html => document.getElementById(elementId).innerHTML = html)
-        .catch(error => console.error('Error loading HTML:', error));
-}
-
-// Load the header and footer
-loadHTML('header-placeholder', 'header.html');
-loadHTML('footer-placeholder', 'footer.html');
