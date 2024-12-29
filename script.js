@@ -19,6 +19,7 @@ document.querySelectorAll('.nav-links').forEach(link => {
 });
 
 
+// theme Icon configuration
 var icon = document.getElementById("icon");
 
 icon.onclick = function() {
@@ -32,5 +33,3 @@ icon.onclick = function() {
         icon.classList.add("fa-moon");
     }
 }
-
-

@@ -9,7 +9,7 @@
     --black: #000000;
 }
 
-.dark-theme{
+.dark-theme {
     --primary-color: #001105;
     --primary-color-2: #01240a;
     --secondary-color: #ececec;
@@ -25,7 +25,7 @@
 }
 
 body {
-    background-image: url("imges/back.png");
+    background-image: url("images/back.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -38,13 +38,10 @@ body {
     display: block;
 }
 
-
 /* Navigation Styles */
 .nav-container {
     width: 100%;
-    /* background-color: var(--secondary-color-2); */
     transition: box-shadow 0.5s ease-in-out;
-    
 }
 
 .navbar {
@@ -58,9 +55,8 @@ body {
     max-width: none; /* Remove max-width restriction */
 }
 
-
 #icon {
-    font-size: 20px; /* Similar size to the 30px width of the image */
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -82,7 +78,6 @@ nav ul {
     text-align: right;
 }
 
-
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -93,7 +88,7 @@ nav ul {
 }
 
 .nav-links {
-    position: relative; /* Required for positioning the dot */
+    position: relative;
     color: var(--secondary-color-2);
     text-decoration: none;
     transition: color 0.2s ease-out;
@@ -106,12 +101,12 @@ nav ul {
 .nav-links.active::after {
     content: '';
     position: absolute;
-    bottom: -5px; /* Adjust the vertical positioning */
+    bottom: -5px; 
     left: 0;
-    width: 100%; /* Span the full width of the menu item */
+    width: 100%;
     margin-top: 20px;
-    height: 2px; /* Height of the underline */
-    background-color: var(--tetiary-color); /* Color of the underline */
+    height: 2px; 
+    background-color: var(--tetiary-color);
 }
 
 .nav-links:hover::after {
@@ -145,7 +140,6 @@ nav ul {
 /* Services Section */
 #services {
     padding: 50px 0;
-    /* background-color: var(--secondary-color); */
 }
 
 .service-header {
@@ -159,7 +153,7 @@ nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 25px;
-    max-width: 1200px; /* Aligns with body */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -231,11 +225,9 @@ nav ul {
     color: var(--tetiary-color-2);
 }
 
-
 #about {
     padding: 50px 20px;
     text-align: center;
-    /* background-color: var(--secondary-color-2); */
 }
 
 .about-container {
@@ -264,71 +256,6 @@ nav ul {
     line-height: 1.6;
     color: var(--secondary-color-2);
 }
-
-.portfolio-section {
-    margin-bottom: 40px;
-}
-
-.experience-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-hr.solid {
-    border-top: 3px solid var(--tetiary-color);
-    width: 70px;
-    margin-left: 0px;
-    margin-top: -10px;
-}
-
-.experience-container {
-    display: flex;
-    margin-bottom: 20px;
-    align-items: flex-start;
-}
-
-.vl {
-    width: 3px;
-    background-color: var(--secondary-color-2);
-    margin-right: 20px;
-    height: auto; /* Grows based on the content's height */
-}
-
-.experience-details {
-    padding-bottom: 10px; /* Adds some spacing between entries */
-    flex: 1; /* Takes up remaining space next to the vertical line */
-}
-
-.experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline; /* Aligns company name and date on the same line */
-}
-
-.location {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-top: 10px;  /*Optional */
-}
-
-.date {
-    font-size: 1em;
-    white-space: nowrap; /* Prevents the date from wrapping onto a new line */
-    color: #555;
-}
-.description{
-    margin-top: 0px;
-    font-size: 0.95em;
-    color: var(--secondary-color-2);
-    width: 90%;
-    margin-bottom: 0px;
-}
-
-ul {
-    list-style-type:square;
-    width: 90%;
-}
-
 
 /* Resume Section */
 #resume-section {
@@ -372,7 +299,7 @@ ul {
 
 .pdf-embed embed {
     width: 100%;
-    height: 800px; /* Adjust height as needed */
+    height: 800px; 
     border: none;
 }
 
@@ -391,7 +318,6 @@ ul {
 
 /* Footer Styles */
 footer {
-    /* background-color: var(--secondary-color-2); */
     width: 100%;
     color: var(--secondary-color-2);
     padding: 20px 0;
@@ -464,11 +390,6 @@ footer {
         transition: all 0.4s ease-out;
     }
 
-    /* .nav-menu {
-        flex-direction: column;
-        width: 100%;
-    } */
-
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -523,37 +444,25 @@ footer {
         font-size: 1.2rem;
     }
 
-
     .about-container {
         padding: 20px;
     }
-    
+
     .profile-image {
         width: 150px;
         height: 150px;
     }
 
-    /* Resume Section Responsive */
-    .pdf-embed embed {
-        height: 600px;
-    }
-
-    @media (max-width: 480px) {
-        .pdf-embed embed {
-            height: 400px;
-        }
-    }
-
     .footer-container {
         flex-direction: column;
-        text-align: center; /* Centers the content */
+        text-align: center;
     }
 
     .footer-right {
-        margin-top: 10px; /* Adds space between the copyright and icons */
+        margin-top: 10px;
     }
 
     .footer-right a {
-        margin: 0 5px; /* Adjusts spacing between icons */
+        margin: 0 5px;
     }
 }
