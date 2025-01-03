@@ -32,7 +32,7 @@ body {
     font-family: "Inconsolata", monospace;
     margin: 0 auto;
     padding: 0 20px;
-    max-width: 1200px; /* Adjust this width to your preference */
+    max-width: 1200px;
     background-color: var(--primary-color-2);
     color: var(--secondary-color-2);
     display: block;
@@ -49,10 +49,10 @@ body {
     grid-template-columns: 0.2fr auto 1fr;
     align-items: center;
     height: 80px;
-    padding: 0 20px; /* Keeps some padding */
-    width: 100%; /* Full width */
-    margin: 0; /* Remove any margin */
-    max-width: none; /* Remove max-width restriction */
+    padding: 0 20px;
+    width: 100%;
+    margin: 0;
+    max-width: none;
 }
 
 #icon {
