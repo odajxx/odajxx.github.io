@@ -65,7 +65,7 @@ body {
     justify-self: start;
     cursor: pointer;
     margin-left: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     text-decoration: none; 
 }
 
@@ -98,7 +98,7 @@ nav ul {
     color: var(--tetiary-color);
 }
 
-.nav-links.active::after {
+/* .nav-links.active::after {
     content: '';
     position: absolute;
     bottom: -5px; 
@@ -107,7 +107,7 @@ nav ul {
     margin-top: 20px;
     height: 2px; 
     background-color: var(--tetiary-color);
-}
+} */
 
 .nav-links:hover::after {
     background-color: var(--tetiary-color-2);
@@ -255,6 +255,49 @@ nav ul {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--secondary-color-2);
+}
+
+/* CERTS Section Styles */
+#certs {
+    text-align: left;
+    margin: 40px 0;
+}
+
+.certs-title {
+    font-family: 'Inconsolata', monospace;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.certs-container {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.cert-button {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.cert-button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+.cert-button:active {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    transform: translateY(2px);
 }
 
 /* Resume Section */
