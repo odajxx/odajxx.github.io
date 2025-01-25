@@ -30,3 +30,4 @@ document.addEventListener("DOMContentLoaded", () => {
     loadHTML("header-placeholder", `${basePath}header.html`);
     loadHTML("footer-placeholder", `${basePath}footer.html`);
 });
+
