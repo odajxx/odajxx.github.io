@@ -1,10 +1,16 @@
 // Function to load external HTML into placeholders
 document.addEventListener("DOMContentLoaded", () => {
+    /**
+     * Function to load external HTML content into placeholders.
+     * @param {string} elementId - The ID of the element to populate.
+     * @param {string} filePath - The path to the HTML file to fetch.
+     */
     function loadHTML(elementId, filePath) {
         fetch(filePath)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error(`Failed to fetch ${filePath}: ${response.statusText}`);
+                    console.error(`Error fetching ${filePath}: ${response.statusText}`);
+                    return;
                 }
                 return response.text();
             })
@@ -13,20 +19,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (element) {
                     element.innerHTML = html;
                 } else {
-                    console.error(`Element with ID '${elementId}' not found.`);
+                    console.warn(`Element with ID '${elementId}' not found.`);
                 }
             })
-            .catch(error => console.error(error.message));
+            .catch(error => console.error(`Fetch error: ${error.message}`));
     }
 
-    // Determine the base path for header and footer files
+    // Calculate the base path dynamically based on the directory depth.
     const basePath = (() => {
-        // Count the number of slashes in the path to determine the depth
-        const depth = window.location.pathname.split("/").length - 2; // Adjust depth based on '/' in path
-        return "../".repeat(depth); // Generate "../" for each directory level
+        const depth = window.location.pathname.split("/").length - 2; // Adjust depth based on '/' in path.
+        return "../".repeat(depth);
     })();
 
-    // Load Header and Footer with the correct path
+    // Load header and footer components.
     loadHTML("header-placeholder", `${basePath}header.html`);
     loadHTML("footer-placeholder", `${basePath}footer.html`);
 });

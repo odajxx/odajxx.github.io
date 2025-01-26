@@ -1,40 +1,39 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Menu Toggle
+ddocument.addEventListener("DOMContentLoaded", () => {
+    /**
+     * Toggles mobile menu visibility and updates accessibility attributes.
+     */
     const menu = document.querySelector("#mobile-menu");
     const menuLinks = document.querySelector(".nav-menu");
-    const icon = document.getElementById("icon"); // Theme toggle icon
 
-    // Mobile menu event listener
-    menu.addEventListener("click", () => {
+    menu?.addEventListener("click", () => {
         menu.classList.toggle("is-active");
         menuLinks.classList.toggle("active");
 
-        // Toggle aria-expanded attribute for accessibility
-        const expanded = menu.getAttribute("aria-expanded") === "true" || false;
+        // Update accessibility attribute dynamically
+        const expanded = menu.getAttribute("aria-expanded") === "true";
         menu.setAttribute("aria-expanded", !expanded);
     });
 
-    // Theme toggle logic
-    icon.onclick = () => {
+    /**
+     * Toggles between dark and light themes when the theme icon is clicked.
+     */
+    const themeIcon = document.getElementById("icon");
+    themeIcon?.addEventListener("click", () => {
         document.body.classList.toggle("dark-theme");
 
+        // Switch icon classes
         if (document.body.classList.contains("dark-theme")) {
-            icon.classList.remove("fa-moon");
-            icon.classList.add("fa-sun");
+            themeIcon.classList.replace("fa-moon", "fa-sun");
         } else {
-            icon.classList.remove("fa-sun");
-            icon.classList.add("fa-moon");
+            themeIcon.classList.replace("fa-sun", "fa-moon");
         }
-    };
+    });
 
-    // Highlight active link
-    const currentPage = window.location.pathname.split("/").pop(); // Get current file name
-    document.querySelectorAll('.nav-links').forEach(link => {
-        const linkHref = link.getAttribute('href');
-        if (linkHref === currentPage) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active'); // Ensure only one active class
-        }
+    /**
+     * Highlights the active navigation link based on the current page.
+     */
+    const currentPage = window.location.pathname.split("/").pop();
+    document.querySelectorAll(".nav-links").forEach(link => {
+        link.classList.toggle("active", link.getAttribute("href") === currentPage);
     });
 });
