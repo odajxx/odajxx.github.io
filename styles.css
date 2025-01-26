@@ -4,8 +4,8 @@
     --primary-color-2: #ffffff;
     --secondary-color: #001105;
     --secondary-color-2: #01240a;
-    --tetiary-color: #b87802;
-    --tetiary-color-2: #E39607;
+    --tertiary-color: #b87802;
+    --tertiary-color-2: #E39607;
     --black: #000000;
 }
 
@@ -14,8 +14,8 @@
     --primary-color-2: #01240a;
     --secondary-color: #ececec;
     --secondary-color-2: #ffffff;
-    --tetiary-color: #b87802;
-    --tetiary-color-2: #E39607;
+    --tertiary-color: #b87802;
+    --tertiary-color-2: #E39607;
     --black: #000000;
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 #nav-logo  {
-    color: var(--tetiary-color);
+    color: var(--tertiary-color);
     justify-self: start;
     cursor: pointer;
     margin-left: 20px;
@@ -95,7 +95,7 @@ nav ul {
 }
 
 .nav-links:hover {
-    color: var(--tetiary-color);
+    color: var(--tertiary-color);
 }
 
 /* .nav-links.active::after {
@@ -106,11 +106,11 @@ nav ul {
     width: 100%;
     margin-top: 20px;
     height: 2px; 
-    background-color: var(--tetiary-color);
+    background-color: var(--tertiary-color);
 } */
 
 .nav-links:hover::after {
-    background-color: var(--tetiary-color-2);
+    background-color: var(--tertiary-color-2);
 }
 
 .menu-toggle .bar {
@@ -223,7 +223,7 @@ nav ul {
 }
 
 .category ul li a:hover {
-    color: var(--tetiary-color-2);
+    color: var(--tertiary-color-2);
 }
 
 #about {
@@ -247,7 +247,7 @@ nav ul {
 
 .about-name {
     font-size: 2rem;
-    color: var(--tetiary-color);
+    color: var(--tertiary-color);
     margin-bottom: 15px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -318,7 +318,6 @@ nav ul {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-
 }
 
 .download-resume {
@@ -333,11 +332,10 @@ nav ul {
     text-decoration: none;
     font-size: 1.2rem;
     transition: all 0.3s ease;
-
 }
 
 .download-btn a:hover {
-    background-color: var(--tetiary-color);
+    background-color: var(--tertiary-color);
     color: var(--black);
 }
 
@@ -359,7 +357,6 @@ nav ul {
     border: none;
 }
 
-
 .pdf-embed p {
     color: var(--primary-color-2);
     margin-top: 10px;
@@ -370,7 +367,7 @@ nav ul {
 }
 
 .pdf-embed p a:hover {
-    color: var(--tetiary-color);
+    color: var(--tertiary-color);
 }
 
 /* Footer Styles */
@@ -403,7 +400,7 @@ footer {
 }
 
 .footer-right a:hover {
-    color: var(--tetiary-color);
+    color: var(--tertiary-color);
 }
 
 /* Responsive Design */
@@ -415,7 +412,7 @@ footer {
     .nav-menu {
         display: grid;
         grid-template-columns: auto;
-        background: var(--tetiary-color);
+        background: var(--tertiary-color);
         margin: 0;
         width: 100%;
         position: absolute;
