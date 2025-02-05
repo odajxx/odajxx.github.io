@@ -75,7 +75,7 @@ body {
     border: none;
     height: 1px; /* Thin line */
     background-color: #ccc; /* Adjust color */
-    margin: 5px 0; /* Small spacing */
+    margin: 5.0px 0; /* Small spacing */
 }
 
 hr.solid {
