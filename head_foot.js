@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     console.warn(`Element with ID '${elementId}' not found.`);
                 }
             })
-            .catch(error => console.error(`Fetch error: ${error.message}`));
+            .catch(error => console.error(`Error loading ${filePath}: ${error.message}`));
     }
 
     // Dynamically determine base path
@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })();
 
     // Load header and footer, then initialize theme toggle
+    loadHTML("head-placeholder", `${basePath}head.html`);
     loadHTML("header-placeholder", `${basePath}header.html`, initThemeToggle);
     loadHTML("footer-placeholder", `${basePath}footer.html`);
 
@@ -34,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const themeIcon = document.getElementById("icon");
 
         // Load and apply saved theme
-        const savedTheme = localStorage.getItem("theme");
+        const savedTheme = localStorage.getItem("theme") || "";
         if (savedTheme) {
             document.body.classList.add(savedTheme);
         }
@@ -65,4 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
             themeIcon.classList.replace("fa-sun", "fa-moon");
         }
     }
+    
+    initThemeToggle();
 });
