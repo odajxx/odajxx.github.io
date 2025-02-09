@@ -32,10 +32,12 @@ body {
     font-family: "Inconsolata", monospace;
     margin: 0 auto;
     padding: 0 20px;
-    max-width: 1300px;
+    max-width: 1200px;
     background-color: var(--primary-color-2);
     color: var(--secondary-color-2);
     display: block;
+    transition: primary-color-2 0.3s, color 0.3s;
+    /* visibility: hidden; */
 }
 
 /* Navigation Styles */
@@ -67,6 +69,21 @@ body {
     margin-left: 20px;
     font-family: 'Inconsolata', sans-serif;
     text-decoration: none; 
+}
+
+.header-hr {
+    border: none;
+    height: 1px; /* Thin line */
+    background-color: #ccc; /* Adjust color */
+    margin: 5.0px 0; /* Small spacing */
+}
+
+hr.solid {
+    border: none;
+    height: 1px; /* Make it very thin */
+    background-color: #ccc; /* Adjust color */
+    width: 10%; 
+    margin: 5px 0; /* Reduce spacing above/below */
 }
 
 a {

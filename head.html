@@ -1,0 +1,26 @@
+<head>
+    <style>
+        /* Prevent white flash by applying the stored theme immediately */
+        body {
+            /* visibility: hidden; */
+        }
+    </style>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem("theme") || "";
+            if (savedTheme) {
+                document.documentElement.classList.add(savedTheme);
+            }
+
+            document.addEventListener("DOMContentLoaded", () => {
+                document.body.style.visibility = "visible";
+            });
+
+            // Force reveal after 2 seconds in case something fails
+            setTimeout(() => {
+                document.body.style.visibility = "visible";
+            }, 2000);
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>

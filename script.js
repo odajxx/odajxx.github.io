@@ -1,39 +1,56 @@
-ddocument.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     /**
-     * Toggles mobile menu visibility and updates accessibility attributes.
+     * Mobile Menu Toggle
+     * Enhances accessibility and toggles menu visibility.
      */
     const menu = document.querySelector("#mobile-menu");
     const menuLinks = document.querySelector(".nav-menu");
 
-    menu?.addEventListener("click", () => {
-        menu.classList.toggle("is-active");
-        menuLinks.classList.toggle("active");
-
-        // Update accessibility attribute dynamically
-        const expanded = menu.getAttribute("aria-expanded") === "true";
-        menu.setAttribute("aria-expanded", !expanded);
-    });
-
-    /**
-     * Toggles between dark and light themes when the theme icon is clicked.
-     */
-    const themeIcon = document.getElementById("icon");
-    themeIcon?.addEventListener("click", () => {
-        document.body.classList.toggle("dark-theme");
-
-        // Switch icon classes
-        if (document.body.classList.contains("dark-theme")) {
-            themeIcon.classList.replace("fa-moon", "fa-sun");
-        } else {
-            themeIcon.classList.replace("fa-sun", "fa-moon");
-        }
-    });
+    if (menu && menuLinks) {
+        menu.addEventListener("click", () => {
+            const expanded = menu.classList.toggle("is-active");
+            menuLinks.classList.toggle("active");
+            menu.setAttribute("aria-expanded", expanded);
+        });
+    }
 
     /**
-     * Highlights the active navigation link based on the current page.
+     * Dark Mode Toggle
+     * Switches between dark and light themes.
      */
-    const currentPage = window.location.pathname.split("/").pop();
+    // const themeIcon = document.getElementById("icon");
+
+    // // Load saved theme
+    // if (localStorage.getItem("theme") === "dark") {
+    //     document.body.classList.add("dark-theme");
+    //     themeIcon.classList.replace("fa-moon", "fa-sun");
+    // }
+
+    // if (themeIcon) {
+    //     themeIcon.addEventListener("click", () => {
+    //         document.body.classList.toggle("dark-theme");
+
+    //         // Ensure the correct class toggling
+    //         if (document.body.classList.contains("dark-theme")) {
+    //             themeIcon.classList.remove("fa-moon");
+    //             themeIcon.classList.add("fa-sun");
+    //         } else {
+    //             themeIcon.classList.remove("fa-sun");
+    //             themeIcon.classList.add("fa-moon");
+    //         }
+    //     });
+    // } else {
+    //     console.error("Theme toggle icon not found!");
+    // }
+
+    /**
+     * Active Navigation Link Highlight
+     * Highlights the nav link corresponding to the current page.
+     */
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll(".nav-links").forEach(link => {
-        link.classList.toggle("active", link.getAttribute("href") === currentPage);
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
     });
 });
