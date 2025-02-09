@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
      */
     const menu = document.querySelector("#mobile-menu");
     const menuLinks = document.querySelector(".nav-menu");
+    const navItems = document.querySelectorAll(".nav-links");
 
     if (menu && menuLinks) {
         menu.addEventListener("click", () => {
@@ -12,40 +13,40 @@ document.addEventListener("DOMContentLoaded", () => {
             menuLinks.classList.toggle("active");
             menu.setAttribute("aria-expanded", expanded);
         });
+
+        // Close menu when a link is clicked
+        navItems.forEach(link => {
+            link.addEventListener("click", () => {
+                if (menu.classList.contains("is-active")) {
+                    menu.classList.remove("is-active");
+                    menuLinks.classList.remove("active");
+                    menu.setAttribute("aria-expanded", "false");
+                }
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", (event) => {
+            if (!menu.contains(event.target) && !menuLinks.contains(event.target)) {
+                menu.classList.remove("is-active");
+                menuLinks.classList.remove("active");
+                menu.setAttribute("aria-expanded", "false");
+            }
+        });
+
+        // Keyboard accessibility (Escape key to close menu)
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && menu.classList.contains("is-active")) {
+                menu.classList.remove("is-active");
+                menuLinks.classList.remove("active");
+                menu.setAttribute("aria-expanded", "false");
+            }
+        });
     }
-
+    
     /**
-     * Dark Mode Toggle
-     * Switches between dark and light themes.
-     */
-    // const themeIcon = document.getElementById("icon");
-
-    // // Load saved theme
-    // if (localStorage.getItem("theme") === "dark") {
-    //     document.body.classList.add("dark-theme");
-    //     themeIcon.classList.replace("fa-moon", "fa-sun");
-    // }
-
-    // if (themeIcon) {
-    //     themeIcon.addEventListener("click", () => {
-    //         document.body.classList.toggle("dark-theme");
-
-    //         // Ensure the correct class toggling
-    //         if (document.body.classList.contains("dark-theme")) {
-    //             themeIcon.classList.remove("fa-moon");
-    //             themeIcon.classList.add("fa-sun");
-    //         } else {
-    //             themeIcon.classList.remove("fa-sun");
-    //             themeIcon.classList.add("fa-moon");
-    //         }
-    //     });
-    // } else {
-    //     console.error("Theme toggle icon not found!");
-    // }
-
-    /**
-     * Active Navigation Link Highlight
-     * Highlights the nav link corresponding to the current page.
+     * Highlight Active Navigation Link
+     * Adds 'active' class to the current page link.
      */
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll(".nav-links").forEach(link => {
