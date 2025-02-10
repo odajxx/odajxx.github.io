@@ -10,3 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+document.querySelectorAll(".category").forEach(category => {
+    category.addEventListener("click", function() {
+        const link = this.querySelector("a");
+        if (link) {
+            window.location.href = link.href;
+        }
+    });
+});
