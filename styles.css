@@ -315,6 +315,56 @@ nav ul {
     transform: translateY(2px);
 }
 
+.experience-container {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* .experience-details {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-color);
+} */
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 1.2em;
+    color: var(--secondary-color);
+}
+
+.date {
+    font-size: 0.9em;
+    color: var(--tertiary-color);
+}
+
+.description {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.experience-container ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.experience-container ul li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
 /* Resume Section */
 #resume-section {
     padding: 50px 20px;
