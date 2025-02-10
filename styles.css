@@ -384,6 +384,40 @@ nav ul {
     color: var(--tertiary-color);
 }
 
+.challenge-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.challenge-list li {
+    /* background: var(--primary-color);
+    border: 2px solid var(--tertiary-color); */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.challenge-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.challenge-list li a {
+    color: var(--secondary-color-2);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.challenge-list li a:hover {
+    color: var(--tertiary-color-2);
+}
+
 /* Footer Styles */
 footer {
     width: 100%;
