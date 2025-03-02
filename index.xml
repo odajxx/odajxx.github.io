@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CATS on ODAJ</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in CATS on ODAJ</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
+    <lastBuildDate>Sun, 23 Feb 2025 23:21:01 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Article2</title>
+      <link>http://localhost:1313/blog/article2/</link>
+      <pubDate>Sun, 23 Feb 2025 23:21:01 +0100</pubDate>
+      <guid>http://localhost:1313/blog/article2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Article1</title>
+      <link>http://localhost:1313/blog/article1/</link>
+      <pubDate>Sun, 23 Feb 2025 23:20:54 +0100</pubDate>
+      <guid>http://localhost:1313/blog/article1/</guid>
+      <description>&lt;p&gt;Well-thought-through product announcements will help increase feature awareness and engage users with new functionality. Just like &lt;a href=&#34;https://canny.io/blog/should-you-have-a-public-roadmap/&#34;&gt;sharing your public roadmap&lt;/a&gt;, it&amp;rsquo;s also a great way to let potential customers see that you&amp;rsquo;re constantly improving.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Project1</title>
+      <link>http://localhost:1313/blog/project1/</link>
+      <pubDate>Sun, 23 Feb 2025 23:02:33 +0100</pubDate>
+      <guid>http://localhost:1313/blog/project1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project2</title>
+      <link>http://localhost:1313/blog/project2/</link>
+      <pubDate>Sun, 23 Feb 2025 23:02:14 +0100</pubDate>
+      <guid>http://localhost:1313/blog/project2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Example Post</title>
+      <link>http://localhost:1313/blog/example-post/</link>
+      <pubDate>Thu, 07 Sep 2023 16:27:22 +0200</pubDate>
+      <guid>http://localhost:1313/blog/example-post/</guid>
+      <description>You can use blog posts for announcing product updates and features.</description>
+    </item>
+    <item>
+      <title>Example Guide</title>
+      <link>http://localhost:1313/docs/docs/tryhackme/example-guide/</link>
+      <pubDate>Thu, 07 Sep 2023 16:04:48 +0200</pubDate>
+      <guid>http://localhost:1313/docs/docs/tryhackme/example-guide/</guid>
+      <description>&lt;p&gt;Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Example Reference</title>
+      <link>http://localhost:1313/docs/docs/ctfs/example-reference/</link>
+      <pubDate>Thu, 07 Sep 2023 16:13:18 +0200</pubDate>
+      <guid>http://localhost:1313/docs/docs/ctfs/example-reference/</guid>
+      <description>&lt;p&gt;Reference pages are ideal for outlining how things work in terse and clear terms. Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what your documenting.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Event2</title>
+      <link>http://localhost:1313/docs/docs/ctfs/event2/</link>
+      <pubDate>Sun, 23 Feb 2025 22:52:50 +0100</pubDate>
+      <guid>http://localhost:1313/docs/docs/ctfs/event2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event1</title>
+      <link>http://localhost:1313/docs/docs/ctfs/event1/</link>
+      <pubDate>Sun, 23 Feb 2025 22:52:27 +0100</pubDate>
+      <guid>http://localhost:1313/docs/docs/ctfs/event1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lab1</title>
+      <link>http://localhost:1313/docs/docs/hackthebox/lab1/</link>
+      <pubDate>Sun, 23 Feb 2025 22:50:58 +0100</pubDate>
+      <guid>http://localhost:1313/docs/docs/hackthebox/lab1/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
