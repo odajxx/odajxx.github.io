@@ -101,8 +101,8 @@
 #   weight = 30
 
 [[footer]]
-  name = "Privacy Policy"
-  url = "/privacy/"
+  name = "No Hacks, No Glory"
+  # url = "/privacy/"
   weight = 10
 
 # [[footer]]
