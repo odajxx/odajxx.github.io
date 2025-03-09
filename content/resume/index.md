@@ -1,6 +1,6 @@
 ---
 title: "Resume"
-description: ""
+description: "Download my resume"
 summary: ""
 date: 2025-02-23T21:15:53+01:00
 lastmod: 2025-02-23T21:15:53+01:00

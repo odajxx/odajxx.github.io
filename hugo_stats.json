@@ -10,6 +10,7 @@
       "circle",
       "details",
       "div",
+      "embed",
       "footer",
       "form",
       "g",
@@ -19,6 +20,7 @@
       "h5",
       "head",
       "header",
+      "hr",
       "html",
       "input",
       "kbd",
@@ -56,6 +58,7 @@
       "btn",
       "btn-close",
       "btn-link",
+      "btn-primary",
       "card",
       "card-body",
       "card-list",
@@ -229,7 +232,11 @@
       "TableOfContents",
       "buttonColorMode",
       "doks-docs-nav",
+      "download-resume",
+      "download-resume-",
       "further-reading",
+      "my-resume",
+      "noindex-false",
       "offcanvasNavMain",
       "offcanvasNavMainLabel",
       "offcanvasNavSection",
@@ -242,7 +249,9 @@
       "searchToggleDesktop",
       "searchToggleMobile",
       "socialMenu",
-      "toc"
+      "toc",
+      "view-resume",
+      "view-resume-"
     ]
   }
 }
