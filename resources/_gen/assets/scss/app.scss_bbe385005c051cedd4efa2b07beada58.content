@@ -269,8 +269,8 @@
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
-  --bs-link-color: #5d2f86;
-  --bs-link-color-rgb: 93, 47, 134;
+  --bs-link-color:rgb(6, 61, 1);
+  --bs-link-color-rgb: rgb(6, 61, 1);
   --bs-link-decoration: none;
   --bs-link-hover-color: #4a266b;
   --bs-link-hover-color-rgb: 74, 38, 107;
