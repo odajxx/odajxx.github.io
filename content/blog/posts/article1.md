@@ -18,8 +18,8 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Well-thought-through product announcements will help increase feature awareness and engage users with new functionality. Just like [sharing your public roadmap](https://canny.io/blog/should-you-have-a-public-roadmap/), it's also a great way to let potential customers see that you're constantly improving.
+## The Password Security Culture
+This blog post provides an introduction to key pasword passwords security concepts. Passwords are not strange to us and though we are getting used to its application already, we’re still having difficulty flowing with it properly. Here’s my quick look on general password security habit every computer (internet, smart devices, computer systems) user is supposed to inculcate and same applies to organizations.
 
 ## Further reading
-
-- Read [How to announce product updates and features](https://canny.io/blog/announce-product-updates-features/)
+Read the full article on [Medium](https://canny.io/blog/announce-product-updates-features/).

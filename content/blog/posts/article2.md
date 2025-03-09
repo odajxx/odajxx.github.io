@@ -17,3 +17,7 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+## The Rising Tide of Cyberattacks: A Call for Comprehensive Cybersecurity
+This blog post provides an...
+
+Read the full article on Medium.
