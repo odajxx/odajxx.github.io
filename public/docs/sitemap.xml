@@ -29,7 +29,7 @@
       <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:1313/docs/docs/tryhackme/example-guide/</loc>
+        <loc>http://localhost:1313/docs/docs/tryhackme/challenge-3/</loc>
         <lastmod>2023-09-07T16:04:48+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
@@ -55,12 +55,6 @@
       <url>
         <loc>http://localhost:1313/docs/docs/hackthebox/lab2/</loc>
         <lastmod>2025-02-23T22:50:33+01:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>http://localhost:1313/docs/docs/ctfs/example-reference/</loc>
-        <lastmod>2023-09-07T16:13:18+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
