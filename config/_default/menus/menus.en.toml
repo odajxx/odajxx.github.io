@@ -69,20 +69,20 @@
 [[social]]
   name = "GitHub"
   pre = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>'
-  url = "https://github.com/thuliteio/doks"
+  url = "https://github.com/odajxx"
   post = "v0.1.0"
   weight = 30
 
 [[social]]
   name = "LinkedIn"
   pre = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect><line x1="8" y1="11" x2="8" y2="16"></line><line x1="8" y1="8" x2="8" y2="8.01"></line><line x1="12" y1="16" x2="12" y2="11"></line><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg>'
-  url = "https://linkedin.com/in/YOUR-LINKEDIN-USERNAME"
+  url = "https://linkedin.com/in/jamal-odiomonafe-b8449822a"
   weight = 20
 
 [[social]]
   name = "Twitter"
-  pre = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M22 4.01c-.75.35-1.5.64-2.33.74a4.1 4.1 0 0 0 1.8-2.24 8.21 8.21 0 0 1-2.6 1 4.07 4.07 0 0 0-7.1 2.8c0 .3 0 .55.07.8a11.5 11.5 0 0 1-8.3-4.2 4.1 4.1 0 0 0 1.2 5.5 3.99 3.99 0 0 1-1.9-.5v.05a4.07 4.07 0 0 0 3.3 4 4.13 4.13 0 0 1-1.9.07 4.1 4.1 0 0 0 3.8 2.8 8.3 8.3 0 0 1-5.2 1.8A8.23 8.23 0 0 1 2 19.8a11.7 11.7 0 0 0 6.2 1.8c7.5 0 11.6-6.2 11.6-11.6 0-.2 0-.5-.03-.7a8.2 8.2 0 0 0 2.1-2.1"></path></svg>'
-  url = "https://twitter.com/YOUR-TWITTER-HANDLE"
+  pre = '<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>'
+  url = "https://x.com/_odaj_"
   weight = 30
 
 # [[sidebar_docs]]
