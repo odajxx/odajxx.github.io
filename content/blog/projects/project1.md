@@ -1,5 +1,5 @@
 ---
-title: "Project1"
+title: "100 Days of Code"
 description: ""
 summary: ""
 date: 2025-02-23T23:02:33+01:00
@@ -17,3 +17,6 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+## Python 100 Days of Code
+
+[GitHub Repo](https://github.com/odajxx/100-DAYS-OF-CODE)
