@@ -33,21 +33,39 @@ jobs:
     env:
       HUGO_VERSION: latest
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O /home/runner/work/_temp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_linux-amd64.deb
-          sudo dpkg -i /home/runner/work/_temp/hugo.deb
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
-      - name: Checkout
+      # Checkout the repository and all submodules (including themes)
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           submodules: recursive
+
+      # Install Hugo CLI (latest extended version)
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extended: true
+
+      # Install Dart Sass for SCSS/SASS processing
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+
+      # Configure GitHub Pages
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
+      # Install Node.js for managing dependencies
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      # Install project dependencies if package.json is present
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: npm install
+
+      # Build the Hugo site
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -56,6 +74,8 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      # Upload the generated site files as an artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -69,6 +89,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      # Deploy the site to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
