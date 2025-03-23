@@ -1,1 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>/blog/article2/</loc><lastmod>2025-02-23T23:21:01+01:00</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url><url><loc>/blog/article1/</loc><lastmod>2025-02-23T23:20:54+01:00</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    <url>
+      <loc>http://localhost:1313/blog/article2/</loc>
+      <lastmod>2025-02-23T23:21:01+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    
+    <url>
+      <loc>http://localhost:1313/blog/article1/</loc>
+      <lastmod>2025-02-23T23:20:54+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    </urlset>

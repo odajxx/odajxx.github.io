@@ -1,1 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on ODAJ</title><link>/blog/projects/</link><description>Recent content in Projects on ODAJ</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2024 Thulite</copyright><lastBuildDate>Sun, 23 Feb 2025 23:02:33 +0100</lastBuildDate><atom:link href="/blog/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Project1</title><link>/blog/project1/</link><pubDate>Sun, 23 Feb 2025 23:02:33 +0100</pubDate><guid>/blog/project1/</guid><description/></item><item><title>Project2</title><link>/blog/project2/</link><pubDate>Sun, 23 Feb 2025 23:02:14 +0100</pubDate><guid>/blog/project2/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on ODAJ</title>
+    <link>http://localhost:1313/blog/projects/</link>
+    <description>Recent content in Projects on ODAJ</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
+    <lastBuildDate>Sun, 23 Feb 2025 23:02:33 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>100 Days of Code</title>
+      <link>http://localhost:1313/blog/100-days-of-code/</link>
+      <pubDate>Sun, 23 Feb 2025 23:02:33 +0100</pubDate>
+      <guid>http://localhost:1313/blog/100-days-of-code/</guid>
+      <description>&lt;h2 id=&#34;python-100-days-of-code&#34;&gt;Python 100 Days of Code&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/odajxx/100-DAYS-OF-CODE&#34;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Project2</title>
+      <link>http://localhost:1313/blog/project2/</link>
+      <pubDate>Sun, 23 Feb 2025 23:02:14 +0100</pubDate>
+      <guid>http://localhost:1313/blog/project2/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
