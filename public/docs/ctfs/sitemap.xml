@@ -2,14 +2,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>http://localhost:1313/docs/docs/ctfs/event2/</loc>
+      <loc>/docs/docs/ctfs/event2/</loc>
       <lastmod>2025-02-23T22:52:50+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://localhost:1313/docs/docs/ctfs/event1/</loc>
+      <loc>/docs/docs/ctfs/event1/</loc>
       <lastmod>2025-02-23T22:52:27+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>

@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on ODAJ</title>
-    <link>http://localhost:1313/blog/posts/</link>
+    <link>/blog/posts/</link>
     <description>Recent content in Posts on ODAJ</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copyright (c) 2020-2024 Thulite</copyright>
     <lastBuildDate>Sun, 23 Feb 2025 23:21:01 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Article2</title>
-      <link>http://localhost:1313/blog/article2/</link>
+      <link>/blog/article2/</link>
       <pubDate>Sun, 23 Feb 2025 23:21:01 +0100</pubDate>
-      <guid>http://localhost:1313/blog/article2/</guid>
+      <guid>/blog/article2/</guid>
       <description>&lt;h2 id=&#34;the-rising-tide-of-cyberattacks-a-call-for-comprehensive-cybersecurity&#34;&gt;The Rising Tide of Cyberattacks: A Call for Comprehensive Cybersecurity&lt;/h2&gt;&#xA;&lt;p&gt;This blog post provides an&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Read the full article on Medium.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Article1</title>
-      <link>http://localhost:1313/blog/article1/</link>
+      <link>/blog/article1/</link>
       <pubDate>Sun, 23 Feb 2025 23:20:54 +0100</pubDate>
-      <guid>http://localhost:1313/blog/article1/</guid>
+      <guid>/blog/article1/</guid>
       <description>&lt;h2 id=&#34;the-password-security-culture&#34;&gt;The Password Security Culture&lt;/h2&gt;&#xA;&lt;p&gt;This blog post provides an introduction to key pasword passwords security concepts. Passwords are not strange to us and though we are getting used to its application already, we’re still having difficulty flowing with it properly. Here’s my quick look on general password security habit every computer (internet, smart devices, computer systems) user is supposed to inculcate and same applies to organizations.&lt;/p&gt;</description>
     </item>
   </channel>

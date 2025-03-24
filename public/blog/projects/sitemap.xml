@@ -2,14 +2,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>http://localhost:1313/blog/100-days-of-code/</loc>
+      <loc>/blog/100-days-of-code/</loc>
       <lastmod>2025-02-23T23:02:33+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://localhost:1313/blog/project2/</loc>
+      <loc>/blog/project2/</loc>
       <lastmod>2025-02-23T23:02:14+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
