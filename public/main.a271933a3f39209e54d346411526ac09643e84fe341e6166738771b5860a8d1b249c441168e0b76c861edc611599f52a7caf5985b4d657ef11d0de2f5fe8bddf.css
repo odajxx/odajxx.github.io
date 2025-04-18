@@ -14561,5 +14561,10 @@ body {
   background-color: {{ site.Params.doks.backGround }};
 }
 */
+button {
+  background-color: #00360c;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px; }
 
 /*# sourceMappingURL=main.css.map */

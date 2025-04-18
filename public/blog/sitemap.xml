@@ -2,45 +2,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>/blog/posts/</loc>
+      <loc>http://localhost:1313/blog/posts/</loc>
       <lastmod>2025-02-23T23:20:02+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>/blog/projects/</loc>
+      <loc>http://localhost:1313/blog/projects/</loc>
       <lastmod>2025-02-23T23:03:14+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>/blog/example-post/</loc>
+      <loc>http://localhost:1313/blog/example-post/</loc>
       <lastmod>2023-09-07T16:27:22+02:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
-        <loc>/blog/article2/</loc>
+        <loc>http://localhost:1313/blog/article2/</loc>
         <lastmod>2025-02-23T23:21:01+01:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>/blog/article1/</loc>
+        <loc>http://localhost:1313/blog/article1/</loc>
         <lastmod>2025-02-23T23:20:54+01:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>/blog/100-days-of-code/</loc>
+        <loc>http://localhost:1313/blog/100-days-of-code/</loc>
         <lastmod>2025-02-23T23:02:33+01:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>/blog/project2/</loc>
+        <loc>http://localhost:1313/blog/project2/</loc>
         <lastmod>2025-02-23T23:02:14+01:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>

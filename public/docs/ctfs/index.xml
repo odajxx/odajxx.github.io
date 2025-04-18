@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CTFs on ODAJ</title>
-    <link>/docs/ctfs/</link>
+    <link>http://localhost:1313/docs/ctfs/</link>
     <description>Recent content in CTFs on ODAJ</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copyright (c) 2020-2024 Thulite</copyright>
     <lastBuildDate>Sun, 23 Feb 2025 22:52:50 +0100</lastBuildDate>
-    <atom:link href="/docs/ctfs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/ctfs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Event2</title>
-      <link>/docs/docs/ctfs/event2/</link>
+      <link>http://localhost:1313/docs/docs/ctfs/event2/</link>
       <pubDate>Sun, 23 Feb 2025 22:52:50 +0100</pubDate>
-      <guid>/docs/docs/ctfs/event2/</guid>
+      <guid>http://localhost:1313/docs/docs/ctfs/event2/</guid>
       <description></description>
     </item>
     <item>
       <title>Event1</title>
-      <link>/docs/docs/ctfs/event1/</link>
+      <link>http://localhost:1313/docs/docs/ctfs/event1/</link>
       <pubDate>Sun, 23 Feb 2025 22:52:27 +0100</pubDate>
-      <guid>/docs/docs/ctfs/event1/</guid>
+      <guid>http://localhost:1313/docs/docs/ctfs/event1/</guid>
       <description></description>
     </item>
   </channel>
