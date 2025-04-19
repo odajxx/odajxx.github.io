@@ -31,7 +31,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: latest
+      HUGO_VERSION: '0.144.2-098c68fd18f48031a7145bedab30cbaede48858f'
     steps:
       # Checkout the repository and all submodules (including themes)
       - name: Checkout repository
@@ -39,12 +39,13 @@ jobs:
         with:
           submodules: recursive
 
-      # Install Hugo CLI (latest extended version)
+      # Install Hugo CLI (0.144.2 extended version)
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: latest
+          hugo-version: '0.144.2-098c68fd18f48031a7145bedab30cbaede48858f'
           extended: true
+
 
       # Install Dart Sass for SCSS/SASS processing
       - name: Install Dart Sass
