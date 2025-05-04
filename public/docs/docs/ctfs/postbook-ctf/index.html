@@ -14,12 +14,12 @@
 
 <link rel="stylesheet" href="/main.ea39338ccbc858ba241bb96c5ec36fadd01baf074fcdda835f6ba3518315b10ab31ef9d6180c026b74e2fca6adf0faa6955516b6a34867116d3f23cc4dee4a5b.css" integrity="sha512-6jkzjMvIWLokG7lsXsNvrdAbrwdPzdqDX2ujUYMVsQqzHvnWGAwCa3Ti/Kat8PqmlVUWtqNIZxFtPyPMTe5KWw==" crossorigin="anonymous">
 
-<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/docs/hackthebox/">
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/docs/docs/ctfs/postbook-ctf/">
 
-  <link rel="canonical" href="http://localhost:1313/docs/hackthebox/">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/hackthebox/index.xml" title="Hackthebox | ODAJ"><link rel="sitemap" type="application/xml" href="http://localhost:1313/docs/hackthebox/sitemap.xml" title="Hackthebox | ODAJ">
+  <link rel="canonical" href="http://localhost:1313/docs/docs/ctfs/postbook-ctf/">
 
-<title>Hackthebox  |  ODAJ</title>
+
+<title>[Postbook CTF  |  ODAJ</title>
 <meta name="description" content="Congrats on setting up a new Doks project!">
 
     
@@ -47,20 +47,24 @@
       >
 <link rel="manifest" href="/manifest.webmanifest">
 
-<meta property="og:url" content="http://localhost:1313/docs/hackthebox/">
+<meta property="og:url" content="http://localhost:1313/docs/docs/ctfs/postbook-ctf/">
   <meta property="og:site_name" content="ODAJ">
-  <meta property="og:title" content="Hackthebox">
-  <meta property="og:description" content="Explore a few HackTheBox Labs, machines, and walkthroughs">
+  <meta property="og:title" content="[Postbook CTF">
+  <meta property="og:description" content="Introduction The Postbook CTF on HackerOne’s Hacker101 platform is an excellent beginner-focused Capture the Flag challenge designed to highlight critical web vulnerabilities. In this write-up, I will walk through each of the seven flags I uncovered, explaining the nature of each security flaw, its real-world implication, and how it can be mitigated.">
   <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2025-02-23T22:52:27+01:00">
+    <meta property="article:modified_time" content="2025-02-23T22:52:27+01:00">
     <meta property="og:image" content="http://localhost:1313/cover.png">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/cover.png">
-  <meta name="twitter:title" content="Hackthebox">
-  <meta name="twitter:description" content="Explore a few HackTheBox Labs, machines, and walkthroughs">
+  <meta name="twitter:title" content="[Postbook CTF">
+  <meta name="twitter:description" content="Introduction The Postbook CTF on HackerOne’s Hacker101 platform is an excellent beginner-focused Capture the Flag challenge designed to highlight critical web vulnerabilities. In this write-up, I will walk through each of the seven flags I uncovered, explaining the nature of each security flaw, its real-world implication, and how it can be mitigated.">
       <meta name="twitter:site" content="@getdoks">
 
+    
     
     <script type="application/ld+json">
   {
@@ -81,8 +85,14 @@
      },
      {
        "@type": "ListItem",
-       "name": "Hackthebox",
+       "item": "http://localhost:1313/docs/ctfs/",
+       "name": "Ctfs",
        "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "[ Postbook Ctf",
+       "position": 4
      }
    ]
  }
@@ -95,7 +105,7 @@
 </head>
 
   
-  <body class="list section docs" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+  <body class="single section docs" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
     <div class="sticky-top">
 <header class="navbar navbar-expand-lg">
   <div class="container-lg">
@@ -160,8 +170,8 @@
     </details>
   </li>
 
-  <li class="active" >
-    <details open>
+  <li>
+    <details>
       <summary>Hackthebox</summary>
       <ul class="list-unstyled list-nested">
 
@@ -177,7 +187,7 @@
   </li>
 
   <li>
-    <details open>
+    <details open open>
       <summary>CTFs</summary>
       <ul class="list-unstyled list-nested">
 
@@ -185,8 +195,8 @@
       <a href="/docs/docs/ctfs/event2/">Event2</a>
   </li>
 
-  <li>
-      <a href="/docs/docs/ctfs/2025-05-03-postbook-ctf/">[2025-05-03] Postbook CTF</a>
+  <li class="active" >
+      <a aria-current="page" href="/docs/docs/ctfs/postbook-ctf/">[Postbook CTF</a>
   </li>
       </ul>
     </details>
@@ -329,47 +339,303 @@
       <div class="content">
       
         
-<div class="row justify-content-center">
-  <div class="col-md-12 col-lg-10 col-xl-8">
-    <article>
-      <h1 class="text-center">Hackthebox</h1>
-      <div class="text-center"><p>Explore a few HackTheBox Labs, machines, and walkthroughs</p>
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Tryhackme</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/docs/tryhackme/challenge-3/">Challenge 3</a>
+  </li>
+
+  <li>
+      <a href="/docs/docs/tryhackme/challenge2/">Challenge2</a>
+  </li>
+
+  <li>
+      <a href="/docs/docs/tryhackme/challenge1/">Challenge1</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Hackthebox</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/docs/hackthebox/lab1/">Lab1</a>
+  </li>
+
+  <li>
+      <a href="/docs/docs/hackthebox/lab2/">Lab2</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>CTFs</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/docs/ctfs/event2/">Event2</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/docs/ctfs/postbook-ctf/">[Postbook CTF</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#flag-1-credential-guessing-default-password">Flag 1: Credential Guessing (Default Password)</a></li>
+        <li><a href="#flag-2-insecure-direct-object-reference-idor">Flag 2: Insecure Direct Object Reference (IDOR)</a></li>
+        <li><a href="#flag-3-hidden-field-manipulation">Flag 3: Hidden Field Manipulation</a></li>
+        <li><a href="#flag-4-mathematical-obfuscation-and-predictable-id-access">Flag 4: Mathematical Obfuscation and Predictable ID Access</a></li>
+        <li><a href="#flag-5-unauthorized-post-editing">Flag 5: Unauthorized Post Editing</a></li>
+        <li><a href="#flag-6-cookie-tampering-and-session-hijacking">Flag 6: Cookie Tampering and Session Hijacking</a></li>
+        <li><a href="#flag-7-unauthorized-post-deletion">Flag 7: Unauthorized Post Deletion</a></li>
+        <li><a href="#key-takeaways">Key Takeaways</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div>
-			<div class="card-list">
-				
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-				
-					
-						<div class="card my-3">
-							<div class="card-body">
-								<a class="stretched-link" href="/docs/docs/hackthebox/lab1/">Lab1 &rarr;</a>
-							</div>
-						</div>
-					
-				
-					
-						<div class="card my-3">
-							<div class="card-body">
-								<a class="stretched-link" href="/docs/docs/hackthebox/lab2/">Lab2 &rarr;</a>
-							</div>
-						</div>
-					
-				
-					
-				
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9">
+		
+			<h1>[Postbook CTF</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#flag-1-credential-guessing-default-password">Flag 1: Credential Guessing (Default Password)</a></li>
+        <li><a href="#flag-2-insecure-direct-object-reference-idor">Flag 2: Insecure Direct Object Reference (IDOR)</a></li>
+        <li><a href="#flag-3-hidden-field-manipulation">Flag 3: Hidden Field Manipulation</a></li>
+        <li><a href="#flag-4-mathematical-obfuscation-and-predictable-id-access">Flag 4: Mathematical Obfuscation and Predictable ID Access</a></li>
+        <li><a href="#flag-5-unauthorized-post-editing">Flag 5: Unauthorized Post Editing</a></li>
+        <li><a href="#flag-6-cookie-tampering-and-session-hijacking">Flag 6: Cookie Tampering and Session Hijacking</a></li>
+        <li><a href="#flag-7-unauthorized-post-deletion">Flag 7: Unauthorized Post Deletion</a></li>
+        <li><a href="#key-takeaways">Key Takeaways</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<h2 id="introduction">Introduction<a href="#introduction" class="anchor" aria-hidden="true">#</a> </h2>
+<p>The Postbook CTF on HackerOne&rsquo;s Hacker101 platform is an excellent beginner-focused Capture the Flag challenge designed to highlight critical web vulnerabilities. In this write-up, I will walk through each of the seven flags I uncovered, explaining the nature of each security flaw, its real-world implication, and how it can be mitigated.</p>
+<h3 id="flag-1-credential-guessing-default-password">Flag 1: Credential Guessing (Default Password)<a href="#flag-1-credential-guessing-default-password" class="anchor" aria-hidden="true">#</a> </h3>
+<ul>
+<li>
+<p><strong>Attack:</strong> Logged in using the username user and the default password password.</p>
+</li>
+<li>
+<p><strong>Implication:</strong> Systems using default or guessable credentials are highly vulnerable to brute-force or credential-stuffing attacks.</p>
+</li>
+<li>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li>Enforce strong password policies.</li>
+<li>Disable or alert on default accounts.</li>
+<li>Use rate limiting and CAPTCHA on login endpoints.</li>
+</ul>
+</li>
+</ul>
+<p>📸 [Insert screenshot showing login success with default creds]</p>
+<h3 id="flag-2-insecure-direct-object-reference-idor">Flag 2: Insecure Direct Object Reference (IDOR)<a href="#flag-2-insecure-direct-object-reference-idor" class="anchor" aria-hidden="true">#</a> </h3>
+<ul>
+<li>
+<p><strong>Attack:</strong> Manually changed the user ID in the URL (e.g., ?id=2) to access another user&rsquo;s profile.</p>
+</li>
+<li>
+<p><strong>Implication:</strong> IDOR allows attackers to access or modify unauthorized resources, leading to data leakage or manipulation.</p>
+</li>
+<li>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li>Enforce authorization checks server-side.</li>
+<li>Avoid exposing internal object identifiers.</li>
+<li>Use access control lists (ACLs) and robust session validation.</li>
+</ul>
+</li>
+</ul>
+<p>📸 [Insert screenshot showing access to another user’s page]</p>
+<h3 id="flag-3-hidden-field-manipulation">Flag 3: Hidden Field Manipulation<a href="#flag-3-hidden-field-manipulation" class="anchor" aria-hidden="true">#</a> </h3>
+<ul>
+<li>
+<p><strong>Attack:</strong> Used developer tools to change a hidden form field&rsquo;s user_id value from 2 to 1, posting content as another user.</p>
+</li>
+<li>
+<p><strong>Implication:</strong> Clients can tamper with hidden fields and impersonate users or perform unauthorized actions.</p>
+</li>
+<li>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li>Never trust client-side data; validate all fields server-side.</li>
+<li>Use session-based identifiers instead of hidden fields for user actions.</li>
+</ul>
+</li>
+</ul>
+<p>📸 [Insert screenshot of developer tools showing form manipulation]</p>
+<h3 id="flag-4-mathematical-obfuscation-and-predictable-id-access">Flag 4: Mathematical Obfuscation and Predictable ID Access<a href="#flag-4-mathematical-obfuscation-and-predictable-id-access" class="anchor" aria-hidden="true">#</a> </h3>
+<ul>
+<li>
+<p><strong>Attack:</strong> Multiplied 189 * 5 to get 945, then accessed a URL with ?id=945 to find a hidden post.</p>
+</li>
+<li>
+<p><strong>Implication:</strong> Predictable ID schemes allow for enumeration and discovery of hidden or sensitive content.</p>
+</li>
+<li>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li>Use UUIDs or non-sequential identifiers.</li>
+<li>Require authentication and authorization for accessing resources.</li>
+</ul>
+</li>
+</ul>
+<p>📸 [Insert screenshot showing post at calculated ID]</p>
+<h3 id="flag-5-unauthorized-post-editing">Flag 5: Unauthorized Post Editing<a href="#flag-5-unauthorized-post-editing" class="anchor" aria-hidden="true">#</a> </h3>
+<ul>
+<li>
+<p><strong>Attack:</strong> Altered post IDs in the edit URL to modify another user&rsquo;s post.</p>
+</li>
+<li>
+<p><strong>Implication:</strong> Lack of proper authorization checks allows data tampering.</p>
+</li>
+<li>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li>Implement strict ownership checks before allowing edit/delete operations.</li>
+<li>
+<ul>
+<li>Log and monitor changes to critical resources.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>📸 [Insert before-and-after screenshots showing edited content]</p>
+<h3 id="flag-6-cookie-tampering-and-session-hijacking">Flag 6: Cookie Tampering and Session Hijacking<a href="#flag-6-cookie-tampering-and-session-hijacking" class="anchor" aria-hidden="true">#</a> </h3>
+<ul>
+<li>
+<p><strong>Attack:</strong> Found an MD5 hash in the cookies and replaced it with the hash for user ID 1 (i.e., c4ca4238a0b923820dcc509a6f75849b for admin).</p>
+</li>
+<li>
+<p><strong>Implication:</strong> Weak or predictable session tokens can be manipulated to impersonate other users.</p>
+</li>
+<li>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li>Use cryptographically secure, random session tokens.</li>
+<li>Sign and encrypt cookies to prevent tampering.</li>
+<li>Avoid using MD5 for hashing sensitive data.</li>
+</ul>
+</li>
+</ul>
+<p>📸 [Insert screenshot showing admin session after cookie change]</p>
+<h3 id="flag-7-unauthorized-post-deletion">Flag 7: Unauthorized Post Deletion<a href="#flag-7-unauthorized-post-deletion" class="anchor" aria-hidden="true">#</a> </h3>
+<ul>
+<li>
+<p><strong>Attack:</strong> Deleted posts by sending requests with manipulated or predictable post IDs.</p>
+</li>
+<li>
+<p><strong>Implication:</strong> Without authorization checks, users can delete others&rsquo; content.</p>
+</li>
+<li>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li>Verify the requesting user has permission to perform the action.</li>
+<li>Use token-based authorization (e.g., CSRF tokens) for destructive operations.</li>
+</ul>
+</li>
+</ul>
+<p>📸 [Insert screenshot confirming successful deletion of unauthorized post]</p>
+<h3 id="key-takeaways">Key Takeaways<a href="#key-takeaways" class="anchor" aria-hidden="true">#</a> </h3>
+<p>The Postbook CTF effectively demonstrates how small oversights in web applications can lead to severe vulnerabilities. As developers and security professionals, it&rsquo;s critical to:</p>
+<ul>
+<li>Never trust user input—always validate server-side.</li>
+<li>Secure authentication and authorization mechanisms.</li>
+<li>Use robust, non-predictable identifiers.</li>
+<li>Protect client-server communication from tampering.</li>
+</ul>
+<p>By understanding these common flaws and how to prevent them, we can build and maintain more secure web applications.</p>
+
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/docs/docs/ctfs/event2/" class="stretched-link text-reset text-decoration-none">Event2</a>
+				</div>
 			</div>
-    </article>
-  </div>
-</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/docs/docs/hackthebox/lab1/" class="stretched-link text-reset text-decoration-none">Lab1</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
 
       
       </div>
