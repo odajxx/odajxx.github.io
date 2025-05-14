@@ -21,7 +21,7 @@
       <link>http://localhost:1313/docs/docs/ctfs/2025-05-03-postbook-ctf/</link>
       <pubDate>Sun, 23 Feb 2025 22:52:27 +0100</pubDate>
       <guid>http://localhost:1313/docs/docs/ctfs/2025-05-03-postbook-ctf/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The Postbook CTF on HackerOne&amp;rsquo;s Hacker101 platform is an excellent beginner-focused Capture the Flag challenge designed to highlight critical web vulnerabilities. In this write-up, I will walk through each of the seven flags I uncovered, explaining the nature of each security flaw, its real-world implication, and how it can be mitigated.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;strong&gt;Postbook CTF&lt;/strong&gt; on &lt;a href=&#34;https://ctf.hacker101.com/&#34;&gt;HackerOne&amp;rsquo;s Hacker101 platform&lt;/a&gt; is an excellent beginner-focused Capture the Flag challenge designed to highlight critical web vulnerabilities. In this write-up, I will walk through each of the seven flags I uncovered, explaining the nature of each security flaw, its real-world implication, and how it can be mitigated.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

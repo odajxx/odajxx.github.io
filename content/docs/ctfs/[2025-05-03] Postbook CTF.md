@@ -17,7 +17,10 @@ seo:
 Introduction
 ---
 
-The Postbook CTF on HackerOne's Hacker101 platform is an excellent beginner-focused Capture the Flag challenge designed to highlight critical web vulnerabilities. In this write-up, I will walk through each of the seven flags I uncovered, explaining the nature of each security flaw, its real-world implication, and how it can be mitigated.
+The **Postbook CTF** on [HackerOne's Hacker101 platform](https://ctf.hacker101.com/) is an excellent beginner-focused Capture the Flag challenge designed to highlight critical web vulnerabilities. In this write-up, I will walk through each of the seven flags I uncovered, explaining the nature of each security flaw, its real-world implication, and how it can be mitigated.
+
+A detailed read about this CTF having pictures and more desciptions can be found on my <a href="https://medium.com/@odajxx/breaking-down-the-hackerone-postbook-ctf-attacks-implications-defenses-645091e10f98" target="_blank" rel="noopener noreferrer">medium page here</a>
+
 
 ### Flag 1: Credential Guessing (Default Password)
 
@@ -30,8 +33,6 @@ The Postbook CTF on HackerOne's Hacker101 platform is an excellent beginner-focu
   - Disable or alert on default accounts.
   - Use rate limiting and CAPTCHA on login endpoints.
 
-📸 [Insert screenshot showing login success with default creds]
-
 ### Flag 2: Insecure Direct Object Reference (IDOR)
 
 - **Attack:** Manually changed the user ID in the URL (e.g., ?id=2) to access another user's profile.
@@ -43,8 +44,6 @@ The Postbook CTF on HackerOne's Hacker101 platform is an excellent beginner-focu
   - Avoid exposing internal object identifiers.
   - Use access control lists (ACLs) and robust session validation.
 
-📸 [Insert screenshot showing access to another user’s page]
-
 ### Flag 3: Hidden Field Manipulation
 
 - **Attack:** Used developer tools to change a hidden form field's user_id value from 2 to 1, posting content as another user.
@@ -53,8 +52,6 @@ The Postbook CTF on HackerOne's Hacker101 platform is an excellent beginner-focu
 - **Prevention:**
   - Never trust client-side data; validate all fields server-side.
   - Use session-based identifiers instead of hidden fields for user actions.
-
-📸 [Insert screenshot of developer tools showing form manipulation]
 
 ### Flag 4: Mathematical Obfuscation and Predictable ID Access
 
@@ -66,8 +63,6 @@ The Postbook CTF on HackerOne's Hacker101 platform is an excellent beginner-focu
   - Use UUIDs or non-sequential identifiers.
   - Require authentication and authorization for accessing resources.
 
-📸 [Insert screenshot showing post at calculated ID]
-
 ### Flag 5: Unauthorized Post Editing
 
 - **Attack:** Altered post IDs in the edit URL to modify another user's post.
@@ -76,8 +71,6 @@ The Postbook CTF on HackerOne's Hacker101 platform is an excellent beginner-focu
 - **Prevention:**
   - Implement strict ownership checks before allowing edit/delete operations.
   - - Log and monitor changes to critical resources.
-
-📸 [Insert before-and-after screenshots showing edited content]
 
 ### Flag 6: Cookie Tampering and Session Hijacking
 
@@ -90,8 +83,6 @@ The Postbook CTF on HackerOne's Hacker101 platform is an excellent beginner-focu
   - Sign and encrypt cookies to prevent tampering.
   - Avoid using MD5 for hashing sensitive data.
 
-📸 [Insert screenshot showing admin session after cookie change]
-
 ### Flag 7: Unauthorized Post Deletion
 
 - **Attack:** Deleted posts by sending requests with manipulated or predictable post IDs.
@@ -101,8 +92,6 @@ The Postbook CTF on HackerOne's Hacker101 platform is an excellent beginner-focu
 - **Prevention:**
   - Verify the requesting user has permission to perform the action.
   - Use token-based authorization (e.g., CSRF tokens) for destructive operations.
-
-📸 [Insert screenshot confirming successful deletion of unauthorized post]
 
 ### Key Takeaways
 
