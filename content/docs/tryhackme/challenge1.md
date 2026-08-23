@@ -1,6 +1,6 @@
 ---
 title: "Challenge1"
-description: "Guides lead a user through a specific task they want to accomplish, often with a sequence of steps."
+description: "Making a change."
 summary: ""
 date: 2025-02-23T22:47:50+01:00
 lastmod: 2025-02-23T22:47:50+01:00
