@@ -18,6 +18,7 @@ Making a Change.
 
 ## Further reading
 
+```
 Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
 PING
 
@@ -28,9 +29,11 @@ PING 10.129.1.15 (10.129.1.15) 56(84) bytes of data.
 64 bytes from 10.129.1.15: icmp_seq=2 ttl=63 time=157 ms
 64 bytes from 10.129.1.15: icmp_seq=3 ttl=63 time=181 ms
 64 bytes from 10.129.1.15: icmp_seq=4 ttl=63 time=265 ms
+```
 
+*NMAP*
 
-NMAP
+```
 
 ┌─[odaj@parrot]─[~/Downloads]
 └──╼ $nmap -sC -sV 10.129.1.15
@@ -63,3 +66,4 @@ Service Info: OS: Unix
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 71.68 seconds
+```
