@@ -31,7 +31,7 @@ PING 10.129.1.15 (10.129.1.15) 56(84) bytes of data.
 64 bytes from 10.129.1.15: icmp_seq=4 ttl=63 time=265 ms
 ```
 
-*NMAP*
+**NMAP SCAN**
 
 ```
 
