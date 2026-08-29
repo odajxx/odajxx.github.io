@@ -1,5 +1,5 @@
 ---
-title: "Crocodile [22-06-2026]"
+title: "Crocodile"
 description: ""
 summary: ""
 date: 2025-02-23T22:50:58+01:00
@@ -14,7 +14,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Making a Change.
+**[[22-06-2026]]**
 
 ## Further reading
 
