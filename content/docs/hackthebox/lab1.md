@@ -182,8 +182,10 @@ root
 Supersecretpassword1
 @BaASD&9032123sADS
 rKXM59ESxesUFHAd
- ```
+```
+
 trying the login on FTP. And yes, the FTP server just takes in anonymous.
+```
 ┌─[odaj@parrot]─[~/Downloads]
 └──╼ $ftp 10.129.1.15
 Connected to 10.129.1.15.
@@ -196,7 +198,6 @@ ftp>
 This is also good as it helps us shift our focus away from the FTP to port 80.
 
 Accessing the IP on the browser on port 80: ```10.129.1.15:80```, gave us a webpage with little buttons and navigations - nothing useful. Looking at what we have from the nmap scan, this is an Apache server running on port 80 - We need a login page to try our credentials. Let's see if we can get some directories that will give us a login page, somewhere. Here comes gobuster:
-
 
 ```
 ┌─[odaj@parrot]─[~/Downloads]
